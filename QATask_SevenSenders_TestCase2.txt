@@ -1,0 +1,37 @@
+Test Scenario1:  The user is able to successfully navigate through variable Komoot packages and buy the subscription. 
+
+Testcase No    : TSC_01		
+Test Step      : Login in to https://www.komoot.com/					
+Description    : User enters the URL			
+Expected result: User is able to successfully launch the URL
+
+
+Testcase No    : TSC_02		
+Test Step      : Click on Shop tab of landing page					
+Description    : User clicks on Shop tab of landing page			
+Expected result: User is able to successfully launch the various package page
+
+
+Testcase No    : TSC_03		
+Test Step      : Click on Region bundle tab and navigate back					
+Description    : User clicks on the World pack tab 			
+Expected result: User is able to successfully launch Region bundle pack tab  and navigate back to various package page.
+
+
+
+Testcase No    : TSC_04		
+Test Step      : Click on Single region pack tab and navigate back					
+Description    : User clicks on the single region tab 			
+Expected result: User is able to successfully launch single region pack tab  and navigate back to various package page.
+
+
+Testcase No    : TSC_05
+Test Step      : Click on hiking in Peak Disricts tab				
+Description    : User clicks on the  hiking in Peak Disricts tab 			
+Expected result: User is able to successfully launch the hiking in Peak Disricts page
+
+
+
+
+
+							

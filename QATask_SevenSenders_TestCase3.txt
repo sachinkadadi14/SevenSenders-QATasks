@@ -1,0 +1,35 @@
+Test Scenario1:  The user is able to successfully navigate through Discover tab and change the language preference to "Deutsch". 
+
+Testcase No    : TSC_01		
+Test Step      : Login in to https://www.komoot.com/					
+Description    : User enters the URL			
+Expected result: User is able to successfully launch the URL
+
+
+Testcase No    : TSC_02		
+Test Step      : Click on Discover tab					
+Description    : User click on Discover tab			
+Expected result: User is able to successfully launch Discover Routes page
+
+
+Testcase No    : TSC_03		
+Test Step      : Click on Road cycling routes tab					
+Description    : User clicks on the Hroad cycling and routes tab 			
+Expected result: User is able to successfully launch road cycling routes page
+
+
+Testcase No    : TSC_04	
+Test Step      : Click on Road cycling routes in lake district tab				
+Description    : User clicks on Click on Road cycling routesin lake district tab of page 			
+Expected result: User is able to successfully launch the Road cycling Routes in Lake district page.
+
+Testcase No    : TSC_05
+Test Step      : User clicks on language dropdown button and selects Deutsch				
+Description    : User selects Deutsch language from dropdown 			
+Expected result: User is able to successfully launch "Rennradtouren" page indicating change of language to Deutsch.
+
+
+
+
+
+							
