@@ -1,0 +1,83 @@
+
+1) Return Employee record with highest salary
+
+SELECT 
+    emp_id,
+    first_name,
+    last_name,
+    gender,
+    position,
+    department_id,
+    salary
+FROM
+    employee
+WHERE
+    salary = (SELECT 
+            MAX(salary)
+        FROM
+            employee);
+***************************************************            
+2) Return the highest salary in employee table
+
+SELECT 
+    MAX(salary)
+FROM
+    employee;
+***************************************************
+3)Return 2nd highest salary from employee table
+
+SELECT 
+    salary
+FROM
+    employee
+WHERE
+    salary NOT IN (SELECT 
+            MAX(salary)
+        FROM
+            employee)
+ORDER BY salary DESC
+LIMIT 1;
+***************************************************
+4)Select range of employees based on id
+
+ SELECT 
+    *
+FROM
+    employee
+WHERE
+    emp_id BETWEEN 10001 AND 10010;
+****************************************************
+5) Return an employee with highest salary and the employee’s department name
+
+ SELECT 
+    e.emp_id,
+    e.first_name,
+    e.last_name,
+    e.gender,
+    e.department_id,
+    e.salary,
+    d.department_name
+FROM
+    employee AS e
+        INNER JOIN
+    department d ON d.department_id = e.department_id
+WHERE
+    salary = (SELECT 
+            MAX(salary)
+        FROM
+            employee);
+
+WITH temp_res_cte_table AS (
+    select department_id, salary,
+	dense_rank() OVER(partition by department_id order by salary desc) as rownum
+	from employee
+)
+*************************************************************************************************
+6) Return highest salary, employee_name, department_name for EACH department
+
+SELECT 
+    department_id, salary
+FROM
+    temp_res_cte_table
+WHERE
+    rownum = 1;
